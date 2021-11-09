@@ -1,0 +1,41 @@
+CREATE DATABASE `userdb` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin ;
+
+create table userinfo(
+	userId varchar(30) not null,
+    userPwd varchar(30) not null,
+    userName varchar(30) not null,
+    userEmail varchar(30) not null,
+    primary key(userId)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+insert  into userinfo values("root","root","관리자","root@na.com");
+
+
+CREATE TABLE BBS (
+    bbsID int,
+    bbsTitle varchar(50),
+    userID varchar(20),
+    bbsDate datetime,
+    bbsContent varchar(2048),
+    bbsAvailable int,
+    PRIMARY KEY (bbsID)
+    )default character set utf8 collate utf8_general_ci;
+
+
+create table comment (
+    commentID int,
+    bbsID int,
+    userID varchar(20),
+    commentDate datetime,
+    commentContent varchar(1000),
+    commentAvailable int,
+    PRIMARY KEY(commentID),
+    FOREIGN KEY (bbsID) REFERENCES bbs (bbsID)
+)default character set utf8 collate utf8_general_ci;
+
+CREATE TABLE `review` (
+  `movieIndex` int(11) NOT NULL,
+  `movieScore` double DEFAULT NULL,
+  `userId` varchar(45) NOT NULL,
+  PRIMARY KEY (`userId`,`movieIndex`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8

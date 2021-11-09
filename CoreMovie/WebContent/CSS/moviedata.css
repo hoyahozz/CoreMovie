@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+#mvContainer{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+#mvImg{
+	margin-left:10%;
+	
+}
+#mvName{
+	font-size: 50px;
+}
+
+
+#mvData{
+	width:50%;
+	margin-bottom: 150px;
+}
+
+#starContainer{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+hr{
+	align:left;
+	color:#8A8985;
+	width:100%;
+}
+.sub{
+	font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+	#mvContainer{
+		display:block;
+	}
+	#mvImg{
+	width:100%;
+	height:400px;
+	margin-left:0px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	
+	}
+	
+
+	
+}

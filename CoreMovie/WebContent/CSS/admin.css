@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+#result_table{
+	border-collapse: collapse; 
+	text-align: left; 
+	line-height: 1.5;
+	 margin : 20px 10px;
+}
+
+#result_table th{
+	 width: 150px; 
+	 padding: 10px;
+	 font-weight: bold;
+	 vertical-align: top;
+	  border: 1px solid #ccc;
+}
+#result_table td{
+	width: 350px;
+	padding: 10px;
+	vertical-align: top;
+	border: 1px solid #ccc; 
+}
+
+
+
+.button {
+	border-radius:10px;
+	padding:3px 10px;
+	margin:10px;
+	background-color: #333;
+	border: 2px solid #333;
+	color: #fff;
+	line-height: 50px;
+}
+.button:hover {
+	background-color: #fff;
+	border-color: #333;
+	color: #333;
+}

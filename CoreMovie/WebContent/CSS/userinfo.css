@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.infoform{
+	text-align:center;
+	font-size:18px;
+	position :realtive;
+}
+
+
+
+.infoform div {
+	color:black;
+	
+	margin-top:40px;
+		
+}
+
+.infoform #a1, #a2{
+	color:black;	
+}
